@@ -1,0 +1,20 @@
+{
+  "name": "ditch-bash",
+  "version": "1.0.0",
+  "description": "node utils for ci pipelines",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "bin": {
+    "load-deps-incrementally": "./incremental-dependency-loader/cli.js",
+    "shorten-branch-name": "./branch-name-shortener/cli.js"
+  },
+  "devDependencies": {
+    "@types/node": "^14.6.4"
+  },
+  "dependencies": {
+    "command-line-args": "^5.1.1"
+  }
+}

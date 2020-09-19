@@ -1,0 +1,31 @@
+{
+  "name": "ditch-bash-src",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "bundle": "rollup -c rollup.config.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "format-code": "prettier -w 'src/**/*.ts'"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run format-code"
+    }
+  },
+  "author": "Luc Fonjallaz",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^5.0.2",
+    "@types/jest": "^26.0.14",
+    "@types/node": "^14.6.2",
+    "husky": "^4.3.0",
+    "jest": "^26.4.2",
+    "prettier": "^2.1.2",
+    "rollup": "^2.26.9",
+    "ts-jest": "^26.3.0",
+    "ts-mockito": "^2.6.1",
+    "tslib": "^2.0.1",
+    "typescript": "^4.0.2"
+  }
+}
